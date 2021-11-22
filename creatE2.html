@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindhu</title>
+    <style>
+        body{
+            display:block;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+        
+        #npheading{
+            padding: 20px 40px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var div = document.createElement("div");
+        div.id="container";
+       
+        var div1 = document.createElement("div");
+        div.id="NewsPaper";
+       
+        var h1 = document.createElement("h1");
+        h1.id="npheading";
+        h1.innerText="THE HINDHU!";
+        document.body.appendChild(h1);
+        document.body.appendChild(div1);
+
+        const img = document.createElement("img"); 
+        img.src="../Exercises/creatinganElement/Abhinandan.JPG";
+        img.alt="Picture of Abhinandan recieving Veer Chakra"
+        document.body.appendChild(img);
+
+        var h3 = document.createElement("h3");
+        h3.innerText="Abhinandan Varthaman: Know the IAF officer, now a Vir Chakra awardee";
+        document.body.appendChild(h3);
+        var p = document.createElement("p");
+        p.innerText="Abhinandan Varthaman, now a group captain, had shot down a Pakistani F-16 during an aerial dogfight over the Line of Control (LoC) in February, 2019. The 38-year-old, hails from Tamil Nadu's Tiruvannamalai district";
+        p.id="para"
+        document.body.appendChild(p);
+
+        document.body.appendChild(div);
+    </script>
+</body>
+</html>
